@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Jira Release Notes 2 Markdown Plugin",
+  "description": "Converts the main view of Jira Release notes to markdown for wiki-ness",
+  "version": "1.0",
+  "author": "Brenton Bairhalter",
+  "browser_action": {
+    "default_icon": "j2d.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "notifications",
+    "http://*/",
+    "https://*/"
+   ],
+   "web_accessible_resources": [ "j2rn.css", "*.woff2"]
+}
