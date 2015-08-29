@@ -43,7 +43,7 @@ chrome.runtime.onMessage.addListener(
                 }
             }
 
-            var storyRow = colArr.join('|');
+            var storyRow = colArr.join('  |  ');
             notes += storyRow + " \n" ;
         }
     }
