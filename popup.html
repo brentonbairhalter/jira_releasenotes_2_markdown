@@ -11,6 +11,10 @@
       <div class="scanner"></div>
         <div class="content">
           <h1>Jira 2 Markdown</h1>
+
+            <input type="radio" id="show-md-options"/>
+            <label for="show-md-options"><span></span></label>
+
           <div class="pre-copy">
             <button id="copy">Get Down</button>
           </div>
@@ -18,6 +22,27 @@
             <p>markdown copied to your clipboard</p>
             <p>paste away...</p>
           </div>
+
+          <div class="md-options-wrapper">
+            <form id="md-options">
+                <div class="input-wrapper">
+                  <label for="col-count">Number of Columns: </label>
+                  <input type="text" id="col-count"></input>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="story-number-col">Story Number Column: </label>
+                  <input type="text" id="story-number-col"></input>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="story-name-col">Story Name Column: </label>
+                  <input type="text" id="story-name-col"></input>
+                </div>
+            </form>
+
+          </div>
+
           <div class="not-jira">
             <p>sorry!<br/>we only get markdown with <a href="http://jira.com" target="_blank">JIRA</a>...</p>
           </div>

@@ -15,5 +15,15 @@
     "http://*/",
     "https://*/"
    ],
-   "web_accessible_resources": [ "j2rn.css", "*.woff2"]
+   "web_accessible_resources": [ "j2rn.css", "*.woff2"],
+     "background" : {
+     "scripts" : ["background.js"]
+   },
+   "content_scripts": [
+        {
+        "matches": ["<all_urls>"],
+        "js": ["content1.js"],
+        "run_at": "document_end"
+        }
+    ]
 }
