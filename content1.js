@@ -1,5 +1,5 @@
 var   wrapper = document.body.getElementsByClassName('aui-page-panel-inner')[0],
-        listItems = wrapper ? wrapper.getElementsByTagName("li"),
+        listItems = wrapper ? wrapper.getElementsByTagName("li") : [],
         notes = "",
         row = "",
         pre = document.createElement('pre'),
